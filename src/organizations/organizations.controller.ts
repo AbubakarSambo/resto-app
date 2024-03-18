@@ -19,7 +19,6 @@ export class OrganizationsController {
 
   @Post()
   create(@Body() createOrganizationDto: CreateOrganizationDto) {
-    console.log({ createOrganizationDto });
     return this.organizationsService.create(createOrganizationDto);
   }
 
